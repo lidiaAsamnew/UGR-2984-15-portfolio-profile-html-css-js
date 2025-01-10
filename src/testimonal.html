@@ -3,9 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="hero-image.webp" as="image" />
+    <link
+      rel="preload"
+      href="font.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="\UGR-2984-15-portfolio-profile-html-css-js\style.css"
     />
     <title>Testimonal Page</title>
   </head>
@@ -13,6 +26,13 @@
     <header>
       <div id="logo">
         <span>LA</span>
+      </div>
+      <div
+        class="hamburger-menu"
+        onclick="toggleMenu()"
+        aria-label="Toggle navigation menu"
+      >
+        <i class="fas fa-bars"></i>
       </div>
       <nav class="top-nav">
         <ul>
@@ -38,16 +58,15 @@
       <h1>What People Say About Me</h1>
       <div class="testimonials">
         <article class="testimonial-card">
-          <img src="images/Testimonal-1.png" alt="User Image of Ribka" />
+          <img src="images\Testimonal-1.webp" alt="User Image of Ribka" />
           <h3>Ribka Mengiste</h3>
           <p>
             "Lidia's creativity and problem-solving skills are outstanding. Her
             ability to deliver on time is unmatched."
           </p>
         </article>
-
         <article class="testimonial-card">
-          <img src="images/Testimonal-2.png" alt="User Image of Zufan" />
+          <img src="images/Testimonal-2.webp" alt="User Image of Zufan" />
           <h3>Zufan Gebrehiwot</h3>
           <p>
             "Excellent communication and impressive frontend skills.Her passion
@@ -56,7 +75,7 @@
           </p>
         </article>
         <article class="testimonial-card">
-          <img src="images/Testimonal-3.png" alt="User Image of Finoteloza" />
+          <img src="images/Testimonal-3.webp" alt="User Image of Finoteloza" />
           <h3>Finoteloza Sisay</h3>
           <p>
             "Highly recommended! Created a stunning portfolio website for me.
@@ -67,17 +86,26 @@
     </main>
 
     <footer>
-      <div>
-        <a href="https://telegram.org/" target="_blank"
+      <div class="icon">
+        <a href="https://telegram.org/" aria-label="Telegram" target="_blank"
           ><i class="fab fa-telegram"></i
         ></a>
-        <a href="https://www.facebook.com/" target="_blank"
+        <a
+          href="https://www.facebook.com/"
+          aria-label="facebook"
+          target="_blank"
           ><i class="fab fa-facebook"></i
         ></a>
-        <a href="https://www.instagram.com/" target="_blank"
+        <a
+          href="https://www.instagram.com/"
+          aria-label="instagram"
+          target="_blank"
           ><i class="fab fa-instagram"></i
         ></a>
-        <a href="https://www.linkedin.com/" target="_blank"
+        <a
+          href="https://www.linkedin.com/"
+          aria-label="linkedin"
+          target="_blank"
           ><i class="fab fa-linkedin"></i
         ></a>
       </div>
@@ -104,5 +132,9 @@
       </div>
       <div class="copyright">© 2024 | Designed by Lidia A.</div>
     </footer>
+    <script
+      src="\UGR-2984-15-portfolio-profile-html-css-js\script.js"
+      defer
+    ></script>
   </body>
 </html>
