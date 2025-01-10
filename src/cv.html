@@ -7,12 +7,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="\UGR-2984-15-portfolio-profile-html-css-js\style.css"
+    />
     <title>CV Page</title>
   </head>
   <body>
     <header>
       <div id="logo">
         <span>LA</span>
+      </div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
       </div>
       <nav class="top-nav">
         <ul>
@@ -36,13 +43,18 @@
     </header>
     <div class="content">
       <div class="left">
-        <div class="profile">
+        <div class="profile_head">
           <img
             src="images/CVProfile.png"
             alt="Profile Picture"
             class="profile-image"
           />
+          <div class="name1">
+            <h1>Lidia Asamnew</h1>
+            <h5>Frontend Developer</h5>
+          </div>
         </div>
+        <hr />
         <div class="section contact">
           <h3>Contact</h3>
           <div>
@@ -68,13 +80,31 @@
             <li>UI/UX Design Principles</li>
           </ul>
         </div>
+        <div class="section languages2">
+          <h3>Languages</h3>
+          <table>
+            <tr>
+              <th>Language</th>
+              <th>Proficiency</th>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Fluent</td>
+            </tr>
+            <tr>
+              <td>Amharic</td>
+              <td>Native</td>
+            </tr>
+          </table>
+        </div>
       </div>
-
       <div class="next">
-        <h1>Lidia Asamnew</h1>
-        <h5>Frontend Developer</h5>
-        <hr />
         <div class="section profile">
+          <div class="name2">
+            <h1>Lidia Asamnew</h1>
+            <h5>Frontend Developer</h5>
+          </div>
+          <hr />
           <h3>Profile</h3>
           <p>
             I'm a passionate Frontend Developer with one years of experience
@@ -141,17 +171,26 @@
       </div>
     </div>
     <footer>
-      <div>
-        <a href="https://telegram.org/" target="_blank"
+      <div class="icon">
+        <a href="https://telegram.org/" aria-label="Telegram" target="_blank"
           ><i class="fab fa-telegram"></i
         ></a>
-        <a href="https://www.facebook.com/" target="_blank"
+        <a
+          href="https://www.facebook.com/"
+          aria-label="facebook"
+          target="_blank"
           ><i class="fab fa-facebook"></i
         ></a>
-        <a href="https://www.instagram.com/" target="_blank"
+        <a
+          href="https://www.instagram.com/"
+          aria-label="instagram"
+          target="_blank"
           ><i class="fab fa-instagram"></i
         ></a>
-        <a href="https://www.linkedin.com/" target="_blank"
+        <a
+          href="https://www.linkedin.com/"
+          aria-label="linkedin"
+          target="_blank"
           ><i class="fab fa-linkedin"></i
         ></a>
       </div>
@@ -178,5 +217,9 @@
       </div>
       <div class="copyright">© 2024 | Designed by Lidia A.</div>
     </footer>
+    <script
+      src="\UGR-2984-15-portfolio-profile-html-css-js\script.js"
+      defer
+    ></script>
   </body>
 </html>

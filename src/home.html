@@ -7,12 +7,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="\UGR-2984-15-portfolio-profile-html-css-js\style.css"
+    />
     <title>Home Page</title>
   </head>
   <body>
     <header>
       <div id="logo">
         <span>LA</span>
+      </div>
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
       </div>
       <nav class="top-nav">
         <ul>
@@ -35,31 +42,35 @@
       </nav>
     </header>
     <main>
-      <div class="welcome">
-        <h1>Hello, I'm Lidia Asamnew</h1>
-        <h2>Frontend Developer</h2>
-        <p>
-          I specialize in creating visually stunning, user-friendly websites
-          that deliver exceptional user experiences. Passionate about coding and
-          design, I transform ideas into reality.
-        </p>
-        <audio controls>
-          <source src="Audio/Audiowelcome.Mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
+      <div class="cover">
+        <div class="welcome">
+          <h1>Hello, I'm Lidia Asamnew</h1>
+          <h2>Frontend Developer</h2>
+          <p>
+            I specialize in creating visually stunning, user-friendly websites
+            that deliver exceptional user experiences. Passionate about coding
+            and design, I transform ideas into reality.
+          </p>
+          <audio controls>
+            <source src="assets/Audiowelcome.Mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
 
-        <div class="Hire">
-          <button>Hire Me</button>
-          <button onclick="location.href='cv-download-link.pdf';">
-            Download CV
-          </button>
+          <div class="Hire">
+            <button onclick="location.href='\contact.html'">Hire Me</button>
+            <a
+              href="\UGR-2984-15-portfolio-profile-html-css-js\src\assets\LIDIA-ASAMNEW-FlowCV-Resume-20241119 (1).pdf"
+              download="LIDIA-ASAMNEW-FlowCV-Resume-20241119 (1).pdf"
+              class="download-btn"
+              ><i class="cvd"></i> Download My Resume</a
+            >
+          </div>
+        </div>
+
+        <div class="First-image">
+          <img src="images/image-2.jpg" alt="Lidia's Image" />
         </div>
       </div>
-
-      <div class="First-image">
-        <img src="images/image-2.jpg" alt="Lidia's Image" />
-      </div>
-
       <div class="Qoute">
         <blockquote>
           <p>
@@ -70,17 +81,26 @@
       </div>
     </main>
     <footer>
-      <div>
-        <a href="https://telegram.org/" target="_blank"
+      <div class="icon">
+        <a href="https://telegram.org/" aria-label="Telegram" target="_blank"
           ><i class="fab fa-telegram"></i
         ></a>
-        <a href="https://www.facebook.com/" target="_blank"
+        <a
+          href="https://www.facebook.com/"
+          aria-label="facebook"
+          target="_blank"
           ><i class="fab fa-facebook"></i
         ></a>
-        <a href="https://www.instagram.com/" target="_blank"
+        <a
+          href="https://www.instagram.com/"
+          aria-label="instagram"
+          target="_blank"
           ><i class="fab fa-instagram"></i
         ></a>
-        <a href="https://www.linkedin.com/" target="_blank"
+        <a
+          href="https://www.linkedin.com/"
+          aria-label="linkedin"
+          target="_blank"
           ><i class="fab fa-linkedin"></i
         ></a>
       </div>
@@ -107,5 +127,9 @@
       </div>
       <div class="copyright">© 2024 | Designed by Lidia A.</div>
     </footer>
+    <script
+      src="\UGR-2984-15-portfolio-profile-html-css-js\script.js"
+      defer
+    ></script>
   </body>
 </html>
